@@ -56,6 +56,18 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
     DolbyManager
 
+# Overlays
+PRODUCT_PACKAGES += \
+    DolbyFrameworksResCommon
+
+# Remove Packages for Dolby Support
+PRODUCT_PACKAGES += \
+    RemovePackagesDolby
+
+# DSP Volume Synchronizer
+PRODUCT_PACKAGES += \
+    DSPVolumeSynchronizer
+
 # Init
 PRODUCT_PACKAGES += \
     init.dolby.rc
@@ -83,5 +95,8 @@ PRODUCT_PACKAGES += \
     libswdap \
     libswgamedap \
     libswspatializer \
-    libswvqe 
+    libswvqe \
+    liboem_specific \
+    libshim_dolby \
+    libshoebox
 
