@@ -97,6 +97,5 @@ PRODUCT_PACKAGES += \
     libswspatializer \
     libswvqe \
     liboem_specific \
-    libshim_dolby \
-    libshoebox
+    libshim_dolby
 
