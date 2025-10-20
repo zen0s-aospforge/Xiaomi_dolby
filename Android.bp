@@ -373,7 +373,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/liboem_specific.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libc", "libm", "libdl", "libutils"],
 		},
 	},
 	compile_multilib: "64",
