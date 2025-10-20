@@ -153,16 +153,12 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcodec2_soft_dolby.so"],
-			shared_libs: ["libbase", "libcodec2", "libcodec2_vndk", "libutils", "libcutils", "liblog", "libstagefright_foundation-v33", "libc++", "libc", "libm", "libdl", ],
-		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcodec2_soft_dolby.so"],
 			shared_libs: ["libbase", "libcodec2", "libcodec2_vndk", "libutils", "libcutils", "liblog", "libstagefright_foundation-v33", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
 }
